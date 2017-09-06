@@ -1,8 +1,35 @@
 body {
     font-family: 'Exo 2', sans-serif;
-    background-color: orange;
 }
 
 .title {
     font-weight: 100;
+    color: white;
+}
+
+.header-opacity {
+    background-color:rgba(0, 0, 0, 0.8);
+    background-blend-mode: soft-light;
+    border-color: transparent;
+}
+
+
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+.navbar {
+    height: 100px;
+    border-radius: 0px;
+}
+
+.navbar-toggle {
+    margin-top: 5%;
+}
+
+.nav {
+    border-color: transparent;
 }

@@ -11,7 +11,7 @@ github_username: chewmacy
 
 # build settings
 port: 4000
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 permalink: pretty
     
