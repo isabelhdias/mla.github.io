@@ -21,16 +21,15 @@ body {
     left: 0;
 }
 
-
-.navbar {
+.navbar-changes {
     height: 100px;
     border-radius: 0px;
 }
 
-.navbar-toggle {
+.navbar-toggle-changes {
     margin-top: 5%;
 }
 
-.nav {
+.nav-changes {
     border-color: transparent;
 }
