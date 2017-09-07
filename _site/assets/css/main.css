@@ -5,6 +5,13 @@ body {
     /*background-color: rgb(3, 4, 28);*/
 }
 
+
+/* HEADER */
+
+.brand {
+    margin-left: 20%;
+}
+
 .title {
     font-weight: 200;
     color: white;
@@ -18,10 +25,42 @@ body {
 }
 
 .header-opacity {
-    background-color:rgba(0, 0, 0, 0.8);
-    background-blend-mode: soft-light;
+    background-color: transparent;
     border-color: transparent;
 }
+
+@media(max-width:767px){
+    
+    .header-font-size {
+        font-size: 20px;
+    }
+}
+
+@media(min-width:768px) {
+    
+    .header-font-size {
+        font-size: 20px;
+    }
+
+}
+@media(min-width:992px){
+    
+    .header-font-size {
+        font-size: 20px;
+    }
+
+}
+@media(min-width:1200px){
+
+    .header-font-size {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
 
 
 .full-width-div {
@@ -43,17 +82,22 @@ body {
 
 .nav-changes {
     border-color: transparent;
+    margin-top: 10%;
 }
 
 .navbar-right-changes {
-    margin-top: 2%;
-    font-size: 18px;
+    margin-top 15%;
 }
 
 ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code override */
 
 
 /* end of bootstrap overrides */
+
+
+
+
+
 
 .blog-posts-preview {
     background-color: rgba(255,255,255, 0.6);
