@@ -6,33 +6,64 @@
     {% include header.html %}
 
     <body style="background-image: url(assets/images/background-blurred.jpg); display: block; background-size: 100%;">
-        
+        <!---  --->
         
         
         <div class="container">
             
-            
+          <!---  
             <section class="page-wrapper">
                 {{content}}
             </section>
-                
-            <div class="blog-posts-preview">
+
+            --->
             
-                {% if site.posts.size > 0 %}
-                    <ul>
-                    {% for post in site.posts %}
-                        <li>
-                            <a href="{{ post.url }}">
-                                <h2>{{ post.title }}</h2>
-                            </a>
-                        </li>
-                    {% endfor %}
-                    </ul>
-                    {% else %}
-                    <p>There are no posts available right. Come back soon!</p>
-                {% endif %}
+            <div class="row">
+            
+            
+                <div class="col-md-6">
+                    
+                    <div class="blog-posts-preview">
+
+                        {% if site.posts.size > 0 %}
+                            <ul>
+                            {% for post in site.posts %}
+                                <li>
+                                    <a href="{{ post.url }}">
+                                        <h2>{{ post.title }}</h2>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                            </ul>
+                            {% else %}
+                            <p>There are no posts available right. Come back soon!</p>
+                        {% endif %}
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-offset-6">
+
+                    <div class="events-preview"> what </div>
+                    
+                   
+
+                </div>
+
+            </div>  
+            
+            <div class="row">
+                
+                <div class="col-md-offset-6 about-us-preview-mod">
+                        
+                    <div class="about-us-preview"> yolo swag </div>
+                        
+                </div>
                 
             </div>
+
+        
             
         </div>
         

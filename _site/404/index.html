@@ -44,6 +44,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse header-opacity" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav nav-changes">
+                    
+                    <!---
+                    
                     <li><a href="#"> <span class="sr-only">(current)</span></a></li>
                     <li><a href="#">Home</a></li>
                     <li class="dropdown">
@@ -58,15 +61,30 @@
                             <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
+                    
+                    --->
                 </ul>
+                
+                <!--- 
+                
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search">
                     </div>
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
+                
+                --->
+                
+                <ul class="nav navbar-nav navbar-right navbar-right-changes">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Newletter</a></li>
+                    
+                    <!---
+                    
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -77,14 +95,32 @@
                             <li><a href="#">Separated link</a></li>
                         </ul>
                     </li>
+                --->
+                    
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
     <div class="container">
+        
+        
+        <div class="title-container">
+            
+            <div class="title">
+            
+                <p><h1>Machine Learning Academy</h1>
+                
+            </div>
+            
+            <div class="title-motto">
+                <p><h3>Learning data science together!</h3>
+            </div>
+            
+        
+        </div>
     
-        <h1 class="title">Machine Learning Academy</h1>
+        
         
     </div>
 
@@ -92,12 +128,12 @@
 </header>
 
     <body style="background-image: url(assets/images/background-blurred.jpg); display: block; background-size: 100%;">
-        
+        <!---  --->
         
         
         <div class="container">
             
-            
+          <!---  
             <section class="page-wrapper">
                 <style type="text/css" media="screen">
   .container {
@@ -121,22 +157,53 @@
 </div>
 
             </section>
-                
-            <div class="blog-posts-preview">
+
+            --->
             
+            <div class="row">
+            
+            
+                <div class="col-md-6">
+                    
+                    <div class="blog-posts-preview">
+
+                        
+                            <ul>
+                            
+                                <li>
+                                    <a href="/2017/09/05/title-separate-by-hyphens/">
+                                        <h2>My First Post</h2>
+                                    </a>
+                                </li>
+                            
+                            </ul>
+                            
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-offset-6">
+
+                    <div class="events-preview"> what </div>
+                    
+                   
+
+                </div>
+
+            </div>  
+            
+            <div class="row">
                 
-                    <ul>
-                    
-                        <li>
-                            <a href="/2017/09/05/title-separate-by-hyphens/">
-                                <h2>My First Post</h2>
-                            </a>
-                        </li>
-                    
-                    </ul>
-                    
+                <div class="col-md-offset-6 about-us-preview-mod">
+                        
+                    <div class="about-us-preview"> yolo swag </div>
+                        
+                </div>
                 
             </div>
+
+        
             
         </div>
         

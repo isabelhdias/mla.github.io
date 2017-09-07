@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Hi this is my site
+## Machine Learning Academy
 
 This is the **index** page.
 
