@@ -145,8 +145,7 @@ ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code
 }
 
 .row-bottom {
-    display: table-cell;
-    vertical-align: bottom;
+
     
 }
 
