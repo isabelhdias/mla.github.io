@@ -161,7 +161,7 @@ ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code
     
     .row-bottom {
 
-        margin-top: 10%;
+        margin-top: 10vh;
     }
  
 }
@@ -170,7 +170,7 @@ ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code
     
     .row-bottom {
 
-        margin-top: 15%;
+        margin-top: 15vh;
     }
 }
 
