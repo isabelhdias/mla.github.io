@@ -142,30 +142,45 @@ ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code
     /*position: relative;*/
 }
 
-.row-bottom {
 
-    
-}
 
 
 
 @media(max-width:767px){
+    
+    .row-bottom {
+
+        margin-top: 0%;
+    }
     
  
 }
 
 
 @media(min-width:768px) {
+    
+    .row-bottom {
+
+        margin-top: 15%;
+    }
  
 }
 
 @media(min-width:992px){
     
-  
+    .row-bottom {
+
+        margin-top: 15%;
+    }
 }
 
 @media(min-width:1200px){
   
+    .row-bottom {
+
+        margin-top: 15vh;
+    }
+    
 }
 
 
