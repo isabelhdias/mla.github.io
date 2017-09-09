@@ -1,4 +1,4 @@
-<div class="container">
+<div class="homepage-space">
             
     <!---  
     <section class="page-wrapper">
@@ -7,7 +7,7 @@
 
     --->
 
-    <div class="row">
+    <div class="row row-bottom clear">
         
         
         <!---
@@ -52,7 +52,7 @@
             
             {% for post in site.posts limit 1 %}
         
-            <div class="blog-posts-preview well well-lg" {% if post.image %} style="background-image: url({{ post.image }})" {% endif %}>
+            <div class="well well-lg" {% if post.image %} style="background-image: url({{ post.image }})" {% endif %}>
                     
                 <div class="blog-posts-preview-background">
                     
@@ -86,7 +86,7 @@
             
             {% for post in site.posts limit 1 %}
         
-            <div class="blog-posts-preview well well-lg" {% if post.image %} style="background-image: url({{ post.image }})" {% endif %}>
+            <div class="well well-lg" {% if post.image %} style="background-image: url({{ post.image }})" {% endif %}>
                     
                 <div class="blog-posts-preview-background">
                     

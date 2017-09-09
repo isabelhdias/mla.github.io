@@ -3,16 +3,27 @@
 
     {% include head.html %}
 
-    {% include header.html %}
+    
 
     <body style="background-image: url(assets/images/white-texture-background.jpg); display: block; background-size: 100%;">
-        <!---  --->
         
-        {% include homepage.html %}
+        <div class="container con">
         
+            {% include header.html %}
+
+            <!---  --->
+
+
+            {% include homepage.html %}
+
+
+
+            {% include footer.html %}
+            
+        </div>
         
     </body>
 
-    {% include footer.html %}
+    
     
 </html>

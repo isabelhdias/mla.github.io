@@ -1,18 +1,46 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-family: 'Exo 2', sans-serif;
     margin: 0;
+    padding: 0;
     height: 100%;
     /*background-color: rgb(3, 4, 28);*/
 }
 
 .full-width-div {
     position: absolute;
-    width: 100%;
+    width: 100vh;
     left: 0;
 }
 
+.con {
+    min-height: 100%;
+    overflow: auto;
+
+}
+
+.clear {
+    clear: both;
+}
+
+
+
 
 /* HEADER */
+
+header {
+    display: block;
+    margin: auto;
+    z-index: 1;
+    min-height: 25vh;
+}
+
 
 .brand {
     margin-left: 20%;
@@ -41,7 +69,7 @@ body {
 /* bootstrap overrides (trying to avoid actual code override) */
 
 .navbar-changes {
-    height: 100px;
+    height: 50%;
     border-radius: 0px;
 }
 
@@ -102,12 +130,15 @@ ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code
 /* FOOTER */
 
 
-.page-footer {
+footer {
     background-color: gray;
     width: 100%;
-    height: 100px;
-    position:absolute;
+    min-height: 15vh;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    margin: auto;
+    display: block;
 }
 
 
@@ -115,34 +146,36 @@ ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code
 
 /* HOMEPAGE */
 
+.homepage-space {
+    min-height: 60vh;
+    position: relative;  
+    margin: auto;
+}
 
+.row-bottom {
+    bottom: 0;
+    position: absolute;
+}
 
 
 
 @media(max-width:767px){
     
-
-    
+ 
 }
 
 
 @media(min-width:768px) {
-    
-
-
+ 
 }
 
 @media(min-width:992px){
     
-
-
-
+  
 }
 
 @media(min-width:1200px){
-    
-
-
+  
 }
 
 
