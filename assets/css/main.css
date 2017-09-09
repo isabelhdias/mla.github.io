@@ -130,7 +130,7 @@ ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code
 /* FOOTER */
 
 
-footer {
+.page-footer {
     background-color: gray;
     width: 100%;
     min-height: 15vh;
