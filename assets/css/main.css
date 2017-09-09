@@ -34,7 +34,6 @@ body {
 /* HEADER */
 
 header {
-    z-index: 1;
     min-height: 25vh;
 }
 
@@ -129,9 +128,8 @@ ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code
 
 .page-footer {
     background-color: gray;
-    width: 100%;
     min-height: 15vh;
-    position: absolute;
+    width: 100%;
     bottom: 0;
     left: 0;
 }
@@ -143,12 +141,13 @@ ul.nav a:hover { color: #fff !important; } /* ATTENTION!!! actual bootstrap code
 
 .homepage-space {
     min-height: 60vh;
-    position: relative;  
+    /*position: relative;*/
 }
 
 .row-bottom {
-    bottom: 0;
-    position: absolute;
+    display: table-cell;
+    vertical-align: bottom;
+    
 }
 
 
