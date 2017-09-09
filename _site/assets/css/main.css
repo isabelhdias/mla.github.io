@@ -21,7 +21,6 @@ body {
 
 .con {
     min-height: 100%;
-    overflow: auto;
 
 }
 
@@ -35,8 +34,6 @@ body {
 /* HEADER */
 
 header {
-    display: block;
-    margin: auto;
     z-index: 1;
     min-height: 25vh;
 }
@@ -137,8 +134,6 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    margin: auto;
-    display: block;
 }
 
 
@@ -149,7 +144,6 @@ footer {
 .homepage-space {
     min-height: 60vh;
     position: relative;  
-    margin: auto;
 }
 
 .row-bottom {
