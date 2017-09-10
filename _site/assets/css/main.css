@@ -38,14 +38,13 @@ header {
 
 
 .brand {
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 .title {
     font-weight: 200;
     color: white;
     margin-left: 5%;
-    margin-top: 5%;
     color: rgb(33, 45, 55);
 }
 
@@ -144,6 +143,11 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
     width: 100%;
 }
 
+/* END OF FOOTER */
+
+
+
+
 
 
 
@@ -155,14 +159,11 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
 }
 
 
-
-
-
 @media(max-width:767px){
     
     .row-bottom {
 
-        margin-top: 2vh;
+        margin-top: 2%;
     }
     
  
@@ -173,7 +174,7 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
     
     .row-bottom {
 
-        margin-top: 2vh;
+        margin-top: 2%;
     }
  
 }
@@ -182,7 +183,7 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
     
     .row-bottom {
 
-        margin-top: 15vh;
+        margin-top: 15%;
     }
 }
 
@@ -190,15 +191,50 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
   
     .row-bottom {
 
-        margin-top: 15vh;
+        margin-top: 15%;
     }
     
 }
 
+/* END OF HOMEPAGE */
 
 
+/* POST */
+
+.post-space {
+    min-height: 60vh;
+}
+
+.content:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background-image: url({{ post.image }});
+    width: 1200px;
+    height: 800px;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
 
 
+.content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* END OF POST */
 
 
 
