@@ -160,6 +160,11 @@
 
 
             <style>
+    
+    /* These classes' css is described here because of the way liquid in Jekyll works. I didn't find any easy way of using YAML variables in css. Could've done inline styling but this is cleaner. 
+    
+        So, every time I need to reference images from YAML files I'm gonna
+    have to write css in top of the html page. */
 
     .post-background {
         
@@ -167,21 +172,55 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 10vh;
+        height: 20vh;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5),
+            inset 0px 3px 5px rgba(0,0,0,0.5);
 }
+    
+    .author-picture {
+        
+        background: url(/mla.github.io/assets/images/pedro.jpg);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        
+    }
 
 
 
 </style>
 
-<div class="container-fluid">
+<div class="container-fluid post-header-space">
+    
     
     <div class="row">
 
         <div class="post-background">
+            
+            <div class="container">
+                
+                <div class="post-header">
+                    
+                    <h1>My First Post</h1>
+                    
+                    <div class="post-header-content">
+                        
+                        &nbsp;&nbsp;&nbsp;
+                    
+                        <div class="author-picture circle"></div>
+                        
+                        &nbsp;&nbsp;&nbsp;
 
-            <p class="post-date">05 Sep 2017</p>
-            <h1>My First Post</h1>
+                        <div class="post-date">
+                            Isabel Dias &bull; 05 Sep 2017
+                        </div>
+                        
+                    </div>
+                       
+                </div>
+            
+            </div>
 
         </div>
         
@@ -192,23 +231,18 @@
 <div class="container">
     
     <div class="post-space">
-             
-        <div class="content">
 
-            <section class="post-content">
+        <section class="post-content">
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-                <p>Nam elit purus, tempus vel velit non, laoreet tempus ligula. Suspendisse eu condimentum urna.</p>
+            <p>Nam elit purus, tempus vel velit non, laoreet tempus ligula. Suspendisse eu condimentum urna.</p>
 
 <p>Aliquam magna magna, faucibus non orci a, ultrices pretium justo. Donec tincidunt tellus mauris,
 quis viverra orci elementum sit amet. Quisque vulputate diam tortor, quis accumsan velit volutpat mattis.</p>
 
 
-            </section>
-
-        </div>
-            
+        </section>
         
     </div>
     

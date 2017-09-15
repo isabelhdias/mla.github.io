@@ -28,6 +28,15 @@ body {
 }
 
 
+.circle {
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
 
 
 /* HEADER */
@@ -201,16 +210,29 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
 
 /* POST */
 
-.post-space {
-    min-height: 60vh;
+.post-header-space {
+    min-height: 20vh;
 }
 
+.post-space {
+    min-height: 40vh;
+}
 
+.post-header-content {
+    display: table;
+}
 
+.post-date {
+    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 15px;
+}
 
-
-
-
+.post-content {
+    margin-top: 5%;
+    font-size: 17px;
+}
 
 /* END OF POST */
 

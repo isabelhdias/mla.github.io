@@ -3,6 +3,8 @@ layout: post
 title: My First Post
 introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 image: /mla.github.io/assets/images/background.jpg
+author: Isabel Dias
+author-picture: /mla.github.io/assets/images/pedro.jpg
 
     
 ---
