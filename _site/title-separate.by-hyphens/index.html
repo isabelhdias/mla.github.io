@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
-         Machine Learning Academy
+         My First Post
         
     </title>
     
@@ -156,166 +156,97 @@
 
 </header>
 
+            <!---  --->
 
 
-            <div class="container">
+            <style>
     
-    <div class="title-container">
+    /* These classes' css is described here because of the way liquid in Jekyll works. I didn't find any easy way of using YAML variables in css. Could've done inline styling but this is cleaner. 
+    
+        So, every time I need to reference images from YAML files I'm gonna
+    have to write css in top of the html page. */
 
-        <div class="title">
+    .post-background {
+        
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/mla.github.io/assets/images/background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 20vh;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5),
+            inset 0px 3px 5px rgba(0,0,0,0.5);
+}
+    
+    .author-picture {
+        
+        background: url(/mla.github.io/assets/images/pedro.jpg);
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        
+    }
 
-            <p><h1>Machine Learning Academy</h1>
-
-        </div>
-
-        <div class="title-motto">
-            <p><h3>Learning data science together!</h3>
-        </div>
 
 
-    </div>
-
-    <div class="homepage-space">
-
-        <!---  
-        <section class="page-wrapper">
-            <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<div class="container-fluid post-header-space">
+    
+    
+    <div class="row">
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
-
-        </section>
-
-        --->
-
-        <div class="row">
-
-
-            <!---
-
-
-            <div class="col-md-6">
-
-                <div class="blog-posts-preview">
-
+        <div class="post-background">
+            
+            <div class="container">
+                
+                <div class="post-header">
                     
-                        <ul>
+                    <h1>My First Post</h1>
+                    
+                    <div class="post-header-content">
                         
-                            <li>
-                                <a href="/title-separate.by-hyphens/">
-                                    <h2>My First Post</h2>
-                                </a>
-                            </li>
+                        &nbsp;&nbsp;&nbsp;
+                    
+                        <div class="author-picture circle"></div>
                         
-                        </ul>
-                        
+                        &nbsp;&nbsp;&nbsp;
 
-                </div>
-
-            </div>
-
-
-            <div class="col-md-offset-6">
-
-                <div class="events-preview"> what </div>
-
-
-
-            </div>
-
-        </div>  
-
-        --->
-
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row-bottom">
-
-                
-
-                <div class="well well-lg"  style="background-image: url(/mla.github.io/assets/images/background.jpg)" >
-
-                    <div class="blog-posts-preview-background">
-
-                        <div class="blog-posts-preview-content well well-lg">
-
-                            <ul>
-
-                                <li><span>05 Sep 2017</span> &bull; <span>Isabel Dias</span> <a href="/mla.github.io/title-separate.by-hyphens/">My First Post</a></li>
-
-                                    Nam elit purus, tempus vel velit non, laoreet tempus ligula. Suspendisse eu condimentum urna. Aliquam magna magna, faucibus non orci...<br>
-
-                                    <a href="/mla.github.io/title-separate.by-hyphens/">Read more...</a><br><br>
-
-
-                            </ul>
-
+                        <div class="post-date">
+                            Isabel Dias &bull; 05 Sep 2017
                         </div>
-
+                        
                     </div>
-
-
+                       
                 </div>
-
-                
-
+            
             </div>
-
-
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row-bottom">
-
-
-                
-
-                <div class="well well-lg"  style="background-image: url(/mla.github.io/assets/images/background.jpg)" >
-
-                    <div class="blog-posts-preview-background">
-
-                        <div class="blog-posts-preview-content well well-lg">
-
-                            <ul>
-
-                                <li><span>05 Sep 2017</span> &raquo; <a href="/mla.github.io/title-separate.by-hyphens/">My First Post</a></li>
-
-                                    Nam elit purus, tempus vel velit non, laoreet tempus ligula. Suspendisse eu condimentum urna. Aliquam magna magna, faucibus non orci...<br>
-
-                                    <a href="/mla.github.io/title-separate.by-hyphens/">Read more...</a><br><br>
-
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-                
-
-            </div>
-
 
         </div>
-
-
+        
     </div>
 
-</div> 
+</div>
+
+<div class="container">
+    
+    <div class="post-space">
+
+        <section class="post-content">
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <p>Nam elit purus, tempus vel velit non, laoreet tempus ligula. Suspendisse eu condimentum urna.</p>
+
+<p>Aliquam magna magna, faucibus non orci a, ultrices pretium justo. Donec tincidunt tellus mauris,
+quis viverra orci elementum sit amet. Quisque vulputate diam tortor, quis accumsan velit volutpat mattis.</p>
+
+
+        </section>
+        
+    </div>
+    
+</div>
             
             
             

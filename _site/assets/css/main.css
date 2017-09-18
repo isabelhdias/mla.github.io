@@ -208,7 +208,7 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
 /* END OF HOMEPAGE */
 
 
-/* POST */
+/* POST (singular post) */
 
 .post-header-space {
     min-height: 20vh;
@@ -235,6 +235,16 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
 }
 
 /* END OF POST */
+
+
+/* POSTS (list of posts) */
+
+.posts-space {
+    min-height: 60vh;
+}
+
+
+/* END OF POSTS */
 
 
 
