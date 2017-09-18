@@ -237,14 +237,16 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
 /* END OF POST */
 
 
-/* POSTS (list of posts) */
+/* BLOG (list of posts) */
 
-.posts-space {
+.blog-space {
     min-height: 60vh;
 }
 
 
-/* END OF POSTS */
+/* END OF BLOG */
+
+
 
 
 
