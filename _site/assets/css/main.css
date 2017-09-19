@@ -249,6 +249,7 @@ preview-title:hover {
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));  
     box-shadow: 0px 2px 5px rgba(0,0,0,0.5),
             inset 0px 3px 5px rgba(0,0,0,0.5);
+    height: 100%;
 }
 
 .preview-content {
@@ -295,6 +296,18 @@ preview-title:hover {
 
 /* the css regarding the posts preview is the same as in the homepage but occupying the whole page. that change was made with bootstrap. */
 
+.vertical-divider {
+    border-right: solid;
+    border-right-color: gray;
+    border-right-width: thin;
+}
+
+.preview-post-content {
+    float: right;
+}
+
+
+
 
 /* END OF BLOG */
 
@@ -304,11 +317,6 @@ preview-title:hover {
 .about-space {
     min-height: 60vh;
 }
-
-.bio-content {
-    
-}
-
 
 
 @media(max-width:767px){
