@@ -2,6 +2,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    
 }
 
 
@@ -29,12 +30,11 @@ body {
 
 
 .circle {
-    width: 50px;
-    height: 50px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
+
 
 
 
@@ -175,7 +175,6 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
         margin-top: 2%;
     }
     
- 
 }
 
 
@@ -205,6 +204,57 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
     
 }
 
+.preview-space {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.preview-author-date {
+    color: gray;
+}
+
+
+.preview-blog {
+    color: gray;
+    font-size: 18px;
+}
+
+.preview-divider {
+    border-bottom: solid;
+    width: 90%;
+    border-bottom-color: gray;
+    border-bottom-width: thin;
+    display: table;
+    margin: 0 auto;
+}
+
+.preview-title{
+    font-size: 20px;
+    color: rgb(33, 45, 55);
+}
+
+preview-title:hover {
+    color: gray;
+}
+
+.preview-continue {
+    color: gray;
+}
+
+.preview-continue:hover{
+    color: rgb(33, 45, 55);
+}
+
+.preview-space {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));  
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5),
+            inset 0px 3px 5px rgba(0,0,0,0.5);
+}
+
+.preview-content {
+    margin-left: 2%;
+    margin-right: 2%;
+}
 /* END OF HOMEPAGE */
 
 
@@ -243,11 +293,105 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
     min-height: 60vh;
 }
 
+/* the css regarding the posts preview is the same as in the homepage but occupying the whole page. that change was made with bootstrap. */
+
 
 /* END OF BLOG */
 
 
+/* ABOUT US */
 
+.about-space {
+    min-height: 60vh;
+}
+
+.bio-content {
+    
+}
+
+
+
+@media(max-width:767px){
+    
+    .bio-pic {
+        width: 70%;
+        height: 70%;
+        display: inline-block;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5),
+            inset 0px 3px 5px rgba(0,0,0,0.5);
+        margin-top: 2%;
+    }
+    
+    .bio-right-bar {
+        border-right: none;
+        margin-bottom: 10%;
+}
+    
+ 
+}
+
+
+@media(min-width:768px) {
+    
+    .bio-pic {
+        width: 70%;
+        height: 70%;
+        display: inline-block;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5),
+            inset 0px 3px 5px rgba(0,0,0,0.5);
+        margin-top: 2%;
+    }
+    
+    .bio-right-bar {
+        border-right: none;
+        margin-bottom: 10%;
+}
+    
+ 
+}
+
+@media(min-width:992px){
+    
+    .bio-pic {
+        width: 70%;
+        height: 70%;
+        display: inline-block;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5),
+            inset 0px 3px 5px rgba(0,0,0,0.5);
+        margin-top: 2%;
+    }
+    
+    .bio-right-bar {
+        border-right: solid;
+        border-right-color: rgb(33, 45, 55);
+        border-right-width: 2px;
+}
+    
+}
+
+@media(min-width:1200px){
+  
+    .bio-pic {
+        width: 70%;
+        height: 70%;
+        display: inline-block;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5),
+            inset 0px 3px 5px rgba(0,0,0,0.5);
+        margin-top: 2%;
+    }
+    
+    .bio-right-bar {
+        border-right: solid;
+        border-right-color: rgb(33, 45, 55);
+        border-right-width: 2px;
+}
+    
+    
+}
+
+
+
+/* END OF ABOUT US */
 
 
 

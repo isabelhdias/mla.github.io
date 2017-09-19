@@ -69,26 +69,36 @@
 
                 {% for post in site.posts limit 1 %}
 
-                <div class="well well-lg" {% if post.image %} style="background-image: url({{ post.image }})" {% endif %}>
+                <div class="well" {% if post.image %} style="background-image: url({{ post.image }})" {% endif %}>
 
-                    <div class="blog-posts-preview-background">
+                    <div class="preview-space">
+                        
+                        <div>   </div>
+                        
+                        <div class="text-center preview-blog">BLOG</div>
+                        <div class="preview-divider"></div>
+                        
+                        <div class="text-center text-uppercase">
+                            
+                            <a href="{{ site.baseurl }}{{ post.url }}" class="preview-title">{{ post.title }}</a>
+                            
+                        </div>
+                        
+                        <div class="text-center preview-author-date">
 
-                        <div class="blog-posts-preview-content well well-lg">
+                            by&nbsp;&nbsp;<span>{{ post.author }}</span> &nbsp; &bull; &nbsp; <span>{{ post.date | date_to_string }}</span>
+                            
+                        </div>
+                        
+                        <div class="preview-content">
 
-                            <ul>
-
-                                <li><span>{{ post.date | date_to_string }}</span> &bull; <span>{{ post.author }}</span> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
-                                    {{post.content | strip_html | truncatewords:20}}<br>
-
-                                    <a href="{{ site.baseurl }}{{ post.url }}">Read more...</a><br><br>
-
-
-                            </ul>
-
+                            <p>{{post.content | strip_html | truncatewords:40}} &nbsp; <a href="{{ site.baseurl }}{{ post.url }}" class="preview-continue">(Continue Reading)</a>
+                            
                         </div>
 
                     </div>
+
+                    
 
 
                 </div>
