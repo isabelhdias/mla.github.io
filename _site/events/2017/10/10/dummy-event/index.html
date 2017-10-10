@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>
-         Machine Learning Academy
+         Dummy Event
         
     </title>
     
@@ -156,177 +156,92 @@
 
 </header>
 
+            <!---  --->
 
 
-            <div class="container">
+            <style>
     
-    <div class="title-container">
+    /* These classes' css is described here because of the way liquid in Jekyll works. I didn't find any easy way of using YAML variables in css. Could've done inline styling but this is cleaner. 
+    
+        So, every time I need to reference images from YAML files I'm gonna
+    have to write css in top of the html page. */
 
-        <div class="title">
-
-            <p><h1>Machine Learning Academy</h1>
-
-        </div>
-
-        <div class="title-motto">
-            <p><h3>Learning data science together!</h3>
-        </div>
-
-
-    </div>
-
-    <div class="row homepage-space">
-
-        <!---  
-        <section class="page-wrapper">
-            <h2 id="machine-learning-academy">Machine Learning Academy</h2>
-
-<p>This is the <strong>index</strong> page.</p>
-
-<p>This site is built with Jekyll.</p>
-
-        </section>
-
-        --->
+    .post-background {
+        
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/mla.github.io/assets/images/events.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 20vh;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.5),
+            inset 0px 3px 5px rgba(0,0,0,0.5);
+}
+    
+    .author-picture {
+        
+        background: url();
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        
+    }
 
 
 
-        <!---
+</style>
 
+<div class="container-fluid post-header-space">
+    
+    
+    <div class="row">
 
-        <div class="col-md-6">
-
-            <div class="blog-posts-preview">
-
-                
-                    <ul>
-                    
-                        <li>
-                            <a href="/events/2017/10/10/dummy-event/">
-                                <h2>Dummy Event</h2>
-                            </a>
-                        </li>
-                    
-                        <li>
-                            <a href="/title-separate.by-hyphens/">
-                                <h2>My First Post</h2>
-                            </a>
-                        </li>
-                    
-                    </ul>
-                    
-
-            </div>
-
-        </div>
-
-
-        <div class="col-md-offset-6">
-
-            <div class="events-preview"> what </div>
-
-
-
-        </div>
-
-    </div>  
-
-    --->
-
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row-bottom">
-
+        <div class="post-background">
             
-
-            <div class="well"  style="background-image: url(/mla.github.io/assets/images/background.jpg)" >
-
-                <div class="preview-space">
-
-                    <div>   </div>
-
-                    <div class="text-center preview-blog">BLOG</div>
-                    <div class="preview-divider"></div>
-
-                    <div class="text-center text-uppercase">
-
-                        <a href="/mla.github.io/title-separate.by-hyphens/" class="preview-title">My First Post</a>
-
-                    </div>
-
-                    <div class="text-center preview-author-date">
-
-                        by&nbsp;&nbsp;<span>Isabel Dias</span> &nbsp; &bull; &nbsp; <span>05 Sep 2017</span>
-
-                    </div>
-
-                    <div class="preview-content">
-
-                        <p>Nam elit purus, tempus vel velit non, laoreet tempus ligula. Suspendisse eu condimentum urna. Aliquam magna magna, faucibus non orci a, ultrices pretium justo. Donec tincidunt tellus mauris, quis viverra orci elementum sit amet. Quisque vulputate diam tortor, quis accumsan... &nbsp; <a href="/mla.github.io/title-separate.by-hyphens/" class="preview-continue">(Continue Reading)</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            
-
-        </div>
-
-
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row-bottom">
-
+            <div class="container">
                 
+                <div class="post-header">
+                    
+                    <h1>Dummy Event</h1>
+                    
+                    <div class="post-header-content">
+                        
+                        &nbsp;&nbsp;&nbsp;
+                    
+                        <div class="author-picture circle"></div>
+                        
+                        &nbsp;&nbsp;&nbsp;
 
-                <div class="well preview-height"  style="background-image: url(/mla.github.io/assets/images/events.jpeg); background-size: cover; background-repeat: no-repeat;" >
-
-                    <div class="preview-space">
-                        
-                        <div>   </div>
-                        
-                        <div class="text-center preview-blog">EVENTS</div>
-                        <div class="preview-divider"></div>
-                        
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 align-center">
-                        
-                            <div class="date text-center">
-                                <div class="date-month">
-                                    October
-                                </div>
-                                
-                                <div class="date-day">
-                                    10
-                                </div>
-                            </div>
+                        <div class="post-date">
+                             &bull; 10 Oct 2017
                         </div>
                         
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> 
-                        
-                            <div class="text-center text-uppercase">
-                            
-                                <a href="/mla.github.io/events/2017/10/10/dummy-event/" class="preview-title">Dummy Event</a>
-                            
-                            </div>
-                            
-                            <div class="preview-content">
-
-                                <p>This is the first event.
- &nbsp; <a href="/mla.github.io/events/2017/10/10/dummy-event/" class="preview-continue">(Continue Reading)</a>
-                            
-                            </div>
-                            
-                            <div class="facebook-event">
-                                <a href="#"></a>
-                            </div>
-                        
-                        </div>    
                     </div>
+                       
                 </div>
-
-                
-
+            
             </div>
 
-    </div> 
+        </div>
+        
+    </div>
+
+</div>
+
+<div class="container">
+    
+    <div class="post-space">
+
+        <section class="post-content">
+
+            <p></p>
+
+            <p>This is the first event.</p>
+
+
+        </section>
+        
+    </div>
     
 </div>
             

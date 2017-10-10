@@ -164,7 +164,6 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
 
 .homepage-space {
     min-height: 60vh;
-    /*position: relative;*/
 }
 
 
@@ -203,6 +202,8 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
     }
     
 }
+
+
 
 .preview-space {
     padding-top: 2%;
@@ -252,9 +253,34 @@ preview-title:hover {
     height: 100%;
 }
 
+.align-center {
+    margin-top: 5%;
+}
+
+.preview-height {
+    height: 30vh;
+}
+
+
+
 .preview-content {
     margin-left: 2%;
     margin-right: 2%;
+}
+
+.date-month {
+    color: red;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.date-day {
+    color: gray;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
 }
 /* END OF HOMEPAGE */
 
