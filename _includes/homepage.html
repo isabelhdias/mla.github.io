@@ -14,6 +14,8 @@
      
     }
     
+    // this method works only when the browser is refreshed because only then the js is recompiled. 
+
     
 </script>
 
@@ -89,33 +91,48 @@
                     
                     <div class="text-center preview-blog">EVENTS</div>
                     <div class="preview-divider"></div>
-
-                    <div class="preview-date text-center">
-                        <div class="date-month">
-                            {{ post.month }}
-                        </div>
-
-                        <div class="date-day">
-                            {{ post.day }}
-                        </div>
-                    </div>
                     
-                
+                    <div class="row">
+                    
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
 
-                    <div class="text-center text-uppercase">
+                            <div class="text-center preview-date">
+                                <div class="date-month">
+                                    {{ post.month }}
+                                </div>
 
-                        <a href="{{ site.baseurl }}{{ post.url }}" class="preview-title">{{ post.title }}</a>
+                                <div class="date-day">
+                                    {{ post.day }}
+                                </div>
+                            </div>
 
-                    </div>
+                        </div>
+                    
+                    
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-8">
+                    
+                            <div class="text-center text-uppercase">
 
-                    <div class="preview-content">
+                                <a href="{{ site.baseurl }}{{ post.url }}" class="preview-title">{{ post.title }}</a>
 
-                        <p>{{post.content | strip_html | truncatewords:40}} &nbsp; <a href="{{ site.baseurl }}{{ post.url }}" class="preview-continue">(Continue Reading)</a>
+                            </div>
 
-                    </div>
+                            <div class="preview-content">
 
-                    <div class="facebook-event">
-                        <a href="#"></a>
+                                <p>{{post.content | strip_html | truncatewords:30}} &nbsp; <a href="{{ site.baseurl }}{{ post.url }}" class="preview-continue">(Continue Reading)</a>
+                                    
+                                <p>LOCATION: {{ post.location }}</p>
+
+                            </div>
+
+                            <div class="facebook-event">
+                                <a href="{{ post.facebook-event }}">
+                                    <img src="/mla.github.io/assets/images/facebook_footer_mla.png" style="width: 20px; height: 20px; margin-top: 2%;">
+                                </a>
+                            </div>          
+                            
+                        </div>
+                        
                     </div>
                     
                 </div>
