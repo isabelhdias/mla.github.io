@@ -170,26 +170,22 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
 @media(max-width:767px){
     
     .row-bottom {
-
         margin-top: 2%;
-    }
-    
+    }  
 }
 
 
 @media(min-width:768px) {
     
     .row-bottom {
-
         margin-top: 2%;
-    }
- 
+        
+    } 
 }
 
 @media(min-width:992px){
     
     .row-bottom {
-
         margin-top: 15%;
     }
 }
@@ -197,12 +193,13 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
 @media(min-width:1200px){
   
     .row-bottom {
-
-        margin-top: 15%;
+        margin-top: 15%; 
     }
-    
 }
 
+.preview-date {
+    float: left;
+}
 
 
 .preview-space {
@@ -257,30 +254,22 @@ preview-title:hover {
     margin-top: 5%;
 }
 
-.preview-height {
-    height: 30vh;
-}
-
-
-
 .preview-content {
     margin-left: 2%;
     margin-right: 2%;
 }
 
+
+
 .date-month {
     color: red;
-    font-size: 12px;
-    padding: 0px;
-    margin: 0px;
+    font-size: 18px;
     
 }
 
 .date-day {
     color: gray;
     font-size: 40px;
-    padding: 0px;
-    margin: 0px;
 }
 /* END OF HOMEPAGE */
 

@@ -1,3 +1,23 @@
+<script>
+    if ( $(window).width() > 768) {      
+        $( document ).ready(function() {
+        var heights = $(".well").map(function() {
+            return $(this).height();
+        }).get(),
+
+        maxHeight = Math.max.apply(null, heights);
+
+        $(".well").height(maxHeight);
+        }); 
+    } 
+    else {
+     
+    }
+    
+    
+</script>
+
+
 <div class="container">
     
     <div class="title-container">
@@ -15,54 +35,7 @@
 
     </div>
 
-    <div class="row homepage-space">
-
-        <!---  
-        <section class="page-wrapper">
-            {{content}}
-        </section>
-
-        --->
-
-
-
-        <!---
-
-
-        <div class="col-md-6">
-
-            <div class="blog-posts-preview">
-
-                {% if site.posts.size > 0 %}
-                    <ul>
-                    {% for post in site.posts %}
-                        <li>
-                            <a href="{{ post.url }}">
-                                <h2>{{ post.title }}</h2>
-                            </a>
-                        </li>
-                    {% endfor %}
-                    </ul>
-                    {% else %}
-                    <p>There are no posts available right. Come back soon!</p>
-                {% endif %}
-
-            </div>
-
-        </div>
-
-
-        <div class="col-md-offset-6">
-
-            <div class="events-preview"> what </div>
-
-
-
-        </div>
-
-    </div>  
-
-    --->
+    <div class="row homepage-space">   
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row-bottom">
 
@@ -106,55 +79,53 @@
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row-bottom">
 
-                {% for post in site.categories.events limit 1 %}
+            {% for post in site.categories.events limit 1 %}
 
-                <div class="well preview-height" {% if post.image %} style="background-image: url({{ post.image }}); background-size: cover; background-repeat: no-repeat;" {% endif %}>
+            <div class="well" {% if post.image %} style="background-image: url({{ post.image }}); background-size: cover; background-repeat: no-repeat;" {% endif %}>
 
-                    <div class="preview-space">
-                        
-                        <div>   </div>
-                        
-                        <div class="text-center preview-blog">EVENTS</div>
-                        <div class="preview-divider"></div>
-                        
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 align-center">
-                        
-                            <div class="date text-center">
-                                <div class="date-month">
-                                    {{ post.month }}
-                                </div>
-                                
-                                <div class="date-day">
-                                    {{ post.day }}
-                                </div>
-                            </div>
+                <div class="preview-space">
+
+                    <div>   </div>
+                    
+                    <div class="text-center preview-blog">EVENTS</div>
+                    <div class="preview-divider"></div>
+
+                    <div class="preview-date text-center">
+                        <div class="date-month">
+                            {{ post.month }}
                         </div>
-                        
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9"> 
-                        
-                            <div class="text-center text-uppercase">
-                            
-                                <a href="{{ site.baseurl }}{{ post.url }}" class="preview-title">{{ post.title }}</a>
-                            
-                            </div>
-                            
-                            <div class="preview-content">
 
-                                <p>{{post.content | strip_html | truncatewords:40}} &nbsp; <a href="{{ site.baseurl }}{{ post.url }}" class="preview-continue">(Continue Reading)</a>
-                            
-                            </div>
-                            
-                            <div class="facebook-event">
-                                <a href="#"></a>
-                            </div>
-                        
-                        </div>    
+                        <div class="date-day">
+                            {{ post.day }}
+                        </div>
                     </div>
+                    
+                
+
+                    <div class="text-center text-uppercase">
+
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="preview-title">{{ post.title }}</a>
+
+                    </div>
+
+                    <div class="preview-content">
+
+                        <p>{{post.content | strip_html | truncatewords:40}} &nbsp; <a href="{{ site.baseurl }}{{ post.url }}" class="preview-continue">(Continue Reading)</a>
+
+                    </div>
+
+                    <div class="facebook-event">
+                        <a href="#"></a>
+                    </div>
+                    
                 </div>
-
-                {% endfor %}
-
+                
             </div>
+
+            {% endfor %}
+
+        </div>
+
 
     </div> 
     
