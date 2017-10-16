@@ -12,12 +12,12 @@
 
                 <div class="preview-space row">
                     
-                    <div class="vertical-divider col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                    <div class="vertical-divider text-center col-lg-2 col-md-2 col-sm-2 col-xs-3">
                         
                         <div class="circle" style="background: url({% if post.author-picture %}{{ post.author-picture }}{% else %}{{ transparent }}{% endif %});
                         background-size: cover;
-                        width: 50px;
-                        height: 50px;
+                        width: 60px;
+                        height: 60px;
                         display: inline-block;"></div>
                     
                         <div class="text-center preview-author-date">
@@ -44,7 +44,7 @@
 
                         <div class="preview-content">
 
-                            <p>{{post.content | strip_html | truncatewords:40}} &nbsp; <a href="{{ site.baseurl }}{{ post.url }}" class="preview-continue">(Continue Reading)</a>
+                            <p>{{post.content | strip_html | truncatewords:50}} &nbsp; <a href="{{ site.baseurl }}{{ post.url }}" class="preview-continue">(Continue Reading)</a>
 
                         </div>
                         

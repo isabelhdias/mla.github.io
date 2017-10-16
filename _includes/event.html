@@ -46,6 +46,8 @@
                     
                     <div class="post-header-content">
                         
+                        &nbsp;&nbsp;&nbsp;
+                        
                         <div class="post-date">
                             {{ page.date | date_to_string }} &bull; Location: {{ page.location }}
                         </div>
@@ -63,4 +65,18 @@
 </div>
 
 
-<div class="events-gap"></div>
+<div class="container">
+    
+    <div class="post-space">
+
+        <section class="post-content">
+
+            <p>{{ page.introduction }}</p>
+
+            {{ content }}
+
+        </section>
+        
+    </div>
+    
+</div>

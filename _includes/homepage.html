@@ -41,7 +41,7 @@
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row-bottom">
 
-            {% for post in site.categories.blog limit 1 %}
+            {% for post in site.categories.blog limit:1 %}
 
             <div class="well" {% if post.image %} style="background-image: url({{ post.image }})" {% endif %}>
 
@@ -81,7 +81,7 @@
 
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 row-bottom">
 
-            {% for post in site.categories.events limit 1 %}
+            {% for post in site.categories.events limit:1 %}
 
             <div class="well" {% if post.image %} style="background-image: url({{ post.image }}); background-size: cover; background-repeat: no-repeat;" {% endif %}>
 
