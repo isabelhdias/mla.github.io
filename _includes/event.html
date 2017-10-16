@@ -7,7 +7,7 @@
 
     .post-background {
         
-        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url({% if page.image %}{{ page.image }}{% else %}{{ black }}{% endif %});
+        background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/mla.github.io/assets/images/events.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -30,6 +30,7 @@
 
 </style>
 
+
 <div class="container-fluid post-header-space">
     
     
@@ -45,16 +46,10 @@
                     
                     <div class="post-header-content">
                         
-                        &nbsp;&nbsp;&nbsp;
-                    
-                        <div class="author-picture circle"></div>
-                        
-                        &nbsp;&nbsp;&nbsp;
-
                         <div class="post-date">
-                            {{ page.author }} &bull; {{ page.date | date_to_string }}
+                            {{ page.date | date_to_string }} &bull; Location: {{ page.location }}
                         </div>
-                        
+      
                     </div>
                        
                 </div>
@@ -67,18 +62,5 @@
 
 </div>
 
-<div class="container">
-    
-    <div class="post-space">
 
-        <section class="post-content">
-
-            <p>{{ page.introduction }}</p>
-
-            {{ content }}
-
-        </section>
-        
-    </div>
-    
-</div>
+<div class="events-gap"></div>
