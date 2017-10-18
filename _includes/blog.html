@@ -2,7 +2,7 @@
 
 <div class="container">
     
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
     
         <div class="blog-space">
             
@@ -49,6 +49,70 @@
                         </div>
                         
                     </div>
+
+                </div>
+
+            </div>
+
+            {% endfor %}
+        
+        </div>
+    
+    
+    </div>
+    
+    
+    <!--- MOBILE VERSION --->
+    
+    
+    <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+    
+        <div class="blog-space">
+            
+            {% for post in site.categories.blog %}
+
+            <div class="well" {% if post.image %} style="background-image: url({{ post.image }})" {% endif %}>
+
+                <div class="preview-space row">
+                    
+                    <div class="container">
+                    
+                        <div class="preview-blog-head text-center">
+
+                            <div class="circle" style="background: url({% if post.author-picture %}{{ post.author-picture }}{% else %}{{ transparent }}{% endif %});
+                            background-size: cover;
+                            width: 60px;
+                            height: 60px;
+                            display: inline-block;"></div>
+
+                            <div class="preview-author-date">
+
+                                by&nbsp;&nbsp;<span>{{ post.author }}</span>
+                                &bull;
+                                <span>{{ post.date | date_to_string }}</span>
+
+                            </div>
+
+                            <div class="mobile-horizontal-divider"></div>
+
+                        </div>
+
+
+                        <div class="text-center text-uppercase">
+
+                            <a href="{{ site.baseurl }}{{ post.url }}" class="preview-title">{{ post.title }}</a>
+
+                        </div>
+
+                        <div class="preview-content">
+
+                            <p>{{post.content | strip_html | truncatewords:50}} &nbsp; <a href="{{ site.baseurl }}{{ post.url }}" class="preview-continue">(Continue Reading)</a>
+
+                        </div>
+                        
+                    </div>
+                        
+                    
 
                 </div>
 

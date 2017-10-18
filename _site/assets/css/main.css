@@ -179,6 +179,13 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
     }
 }
 
+.mobile-horizontal-divider {
+    width: 100%;
+    color: gray;
+    border-bottom: solid;
+    border-bottom-color: gray;
+    border-bottom-width: thin;
+}
 
 @media(min-width:768px) {
     
@@ -224,10 +231,6 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
     padding-bottom: 2%;
 }
 
-.preview-author-date {
-    color: gray;
-}
-
 
 .preview-blog {
     color: gray;
@@ -248,7 +251,7 @@ ul.nav a:hover { color: grey !important; } /* ATTENTION!!! actual bootstrap code
     color: rgb(33, 45, 55);
 }
 
-preview-title:hover {
+.preview-title:hover {
     color: gray;
 }
 
@@ -438,3 +441,5 @@ preview-title:hover {
 .events-gap {
     height: 5vh;
 }
+
+/* END OF EVENTS */
